@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-        <Modal></Modal>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid" id="top-header">
-                <div class="navbar-header">
-                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+    <Modal></Modal>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" id="top-header">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
                         <span class="sr-only">{{ $t("action.toggleNavbar") }}</span>
                     </button> -->
-                    <a class="navbar-brand" href="/"><div>{{ $t("info.title") }}</div></a>
-                </div>
-                <div class="brand1">
-                    <a href="https://space.bilibili.com/477317922/" target="_blank"><img src="resources/bilibili.svg" title="B站链接" alt="B站链接" height="18"/></a>
-                </div>
-                <div class="brand1">
-                    请注意音量大小
-                </div>
-                <div class="brand1">
-                    <a href="https://www.bilibili.com/video/BV11D4y1d7wm/" target="_blank">点我听歌</a>
-                </div>
-                <div class="brand1">
-                    <!-- 不留遗憾 -->
-                    <!-- 相信一切都会好起来 -->
-                </div>
-                <!-- <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <a class="navbar-brand" href="/">
+            <div>{{ $t("info.title") }}</div>
+          </a>
+        </div>
+        <div class="brand1">
+          <a href="https://space.bilibili.com/477317922/" target="_blank"><img src="resources/bilibili.svg" title="B站链接"
+              alt="B站链接" height="18" /></a>
+        </div>
+        <div class="brand1">
+          请注意音量大小
+        </div>
+        <div class="brand1">
+          <a href="https://www.bilibili.com/video/BV11D4y1d7wm/" target="_blank">点我听歌</a>
+        </div>
+        <div class="brand1">
+          <!-- 不留遗憾 -->
+          <!-- 相信一切都会好起来 -->
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="https://space.bilibili.com/477317922/" target="_blank"><img src="resources/bilibili.svg" height="18"/></a></li>
                     </ul>
@@ -37,129 +40,148 @@
                         </li>
                     </ul>
                 </div> -->
-            </div>
-        </nav>
-        <div class="container-fluid main-content">
-            <HomePage></HomePage>
-            <!-- <div class="container-fluid img-center" >
+      </div>
+    </nav>
+    <div class="container-fluid main-content">
+      <HomePage></HomePage>
+      <!-- <div class="container-fluid img-center" >
                 <img src="resources/yanhuo.gif">
             </div>  -->
-            <!-- <div :class=xxx >
+      <!-- <div :class=xxx >
                 <img src="resources/mikid.png">
             </div>  -->
-            <div class="fixed-left" >
-                <img src="resources/mi.png">
-            </div>  
-                        <!-- <div class="fixed-right" >
+      <div class="fixed-left">
+        <img src="resources/mi.png">
+      </div>
+      <!-- <div class="fixed-right" >
                 <img src="resources/tree.png">
             </div> -->
+    </div>
+    <footer class="footer">
+      <div>
+        <div>{{ $t("info.audioStaff") }}</div>
+        <div>友情链接:<a href="https://www.mihiru.com" target="_blank">mihiru.com</a>&nbsp;
+          <a href="https://voice.mahiru.live/" target="_blank">孟按钮</a> &nbsp;
+          <a href="https://bbs.nga.cn/read.php?tid=23498962" target="_blank">NGA弥楼</a> &nbsp;
+          <a href="https://bbs.nga.cn/read.php?tid=23130748" target="_blank">告一段落的病栋</a> &nbsp;
         </div>
-        <footer class="footer">
-                <div>
-                    <div>{{$t("info.audioStaff")}}</div>
-                    <div>友情链接:<a href="https://www.mihiru.com" target="_blank">mihiru.com</a>&nbsp;
-                    <a href="https://voice.mahiru.live/" target="_blank">孟按钮</a> &nbsp;
-                    <a href="https://bbs.nga.cn/read.php?tid=23498962" target="_blank">NGA弥楼</a> &nbsp;
-                    <a href="https://bbs.nga.cn/read.php?tid=23130748" target="_blank">告一段落的病栋</a> &nbsp;
-                    </div>
-                    <div>音频投稿:touhou@lolimy.cn github 或者弥四/魔球群丢群文件 只有时间点也行</div>
-                </div>
-                <div>
-                    <div class="text-right"><a href="https://github.com/zyzsdy/aqua-button" target="_blank">原项目</a></div>
-                    <div class="text-right">本项目<a href="https://github.com/xuziang111/miki-button-src" target="_blank">{{$t("info.toGithub")}}</a></div>
-                    <div class="text-right">{{$t("info.notOfficial")}}</div>
-                </div>
-                <!-- <div>Zyzsdy 2019-2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div> -->
-        </footer>
+        <div>音频投稿:touhou@lolimy.cn github 或者弥四/魔球群丢群文件 只有时间点也行</div>
+      </div>
+      <div>
+        <div class="text-right"><a href="https://github.com/zyzsdy/aqua-button" target="_blank">原项目</a></div>
+        <div class="text-right">本项目<a href="https://github.com/xuziang111/miki-button-src" target="_blank">{{
+              $t("info.toGithub") }}</a></div>
+        <div class="text-right">{{ $t("info.notOfficial") }}</div>
+      </div>
+      <!-- <div>Zyzsdy 2019-2020 <span style="color: rgba(0, 0, 0, 0.1)">Powered By Meowsound Idols</span></div> -->
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
-body{
-    background-color:#000;
+
+body {
+  background-color: #000;
 }
-.cate-header{
-    color:#fff;
+
+.cate-header {
+  color: #fff;
 }
-#top-header{
-    display:flex;
+
+#top-header {
+  display: flex;
 }
-.fixed-left{
-    position: fixed;
-    z-index: -1;
-    top:10px;
-    right:0;
+
+.fixed-left {
+  position: fixed;
+  z-index: -1;
+  top: 10px;
+  right: 0;
 }
-.fixed-right{
-    position: fixed;
-    z-index: -1;
-    top:10px;
-    left:0;
+
+.fixed-right {
+  position: fixed;
+  z-index: -1;
+  top: 10px;
+  left: 0;
 }
-.fixed-right img{
-    height:100vh;
+
+.fixed-right img {
+  height: 100vh;
 }
-.fixed-left img{
-    // position: absolute;
-    // z-index: -1;
-    // top:0;
-    // right:0px;
-    // width:50%;
-    height:100vh;
+
+.fixed-left img {
+  // position: absolute;
+  // z-index: -1;
+  // top:0;
+  // right:0px;
+  // width:50%;
+  height: 100vh;
 }
-.img-left{
-    position: fixed;
-    z-index: -1;
-    top:0;
-    right:-100px;
+
+.img-left {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: -100px;
 }
-.img-center2{
-    position: fixed;
-    z-index: -1;
-    
-    top:0;
-    right:-300px;
+
+.img-center2 {
+  position: fixed;
+  z-index: -1;
+
+  top: 0;
+  right: -300px;
 }
-.img-center2 img{
-    width:100%;
+
+.img-center2 img {
+  width: 100%;
 }
-.img-center{
-    display:flex;
-    justify-content: center;
-    padding:10px 0 10px 0;
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
 }
-.brand1{
-    padding:0 5px 0 5px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+.brand1 {
+  padding: 0 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-html{
-    height:100%;
+
+html {
+  height: 100%;
 }
-body{
-    padding-top: 70px;
-    height:100%;
+
+body {
+  padding-top: 70px;
+  height: 100%;
 }
-#app{
-    min-height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.main-content{
-    // min-height: 100vh;
+
+.main-content {
+  // min-height: 100vh;
 }
+
 .footer {
-    width: 100%;
-    background-color: #ebebeb;
-        display:flex;
-    padding: 10px;
-    color: #666;
-    justify-content:space-between;
-    align-items: center;
+  width: 100%;
+  background-color: #ebebeb;
+  display: flex;
+  padding: 10px;
+  color: #666;
+  justify-content: space-between;
+  align-items: center;
 }
+
 // .footer-content {
 //     display:flex;
 //     padding-top: 10px;
@@ -167,11 +189,11 @@ body{
 //     justify-content:space-between;
 //     align-items: center;
 // }
-.text-right{
-    text-align: right;
+.text-right {
+  text-align: right;
 }
 </style>
-<script type="text/javascript" src="'./util/snowfall.js'"></script>
+<script type="text/javascript" src='./util/snowfall.js'></script>
 <script>
 import Vue from 'vue'
 import Component from 'vue-class-component'
@@ -222,4 +244,3 @@ class App extends Vue {
 
 export default App;
 </script>
-
